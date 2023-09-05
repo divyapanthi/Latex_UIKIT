@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0EF2202AA5E90F00A23A30 /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0EF21F2AA5E90F00A23A30 /* SwiftMath */; };
 		5A9F96CB2AA1C64900F65583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F96CA2AA1C64900F65583 /* AppDelegate.swift */; };
 		5A9F96CD2AA1C64900F65583 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F96CC2AA1C64900F65583 /* SceneDelegate.swift */; };
 		5A9F96CF2AA1C64900F65583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F96CE2AA1C64900F65583 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0EF2202AA5E90F00A23A30 /* SwiftMath in Frameworks */,
 				CAC0DDCF64FFEA883875DAD2 /* Pods_LatexUIKIT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +50,6 @@
 				618AA074D2ED40C1F7AE1089 /* Pods-LatexUIKIT.debug.xcconfig */,
 				73DCC2A166BD016B05D2A84F /* Pods-LatexUIKIT.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,6 +111,9 @@
 			dependencies = (
 			);
 			name = LatexUIKIT;
+			packageProductDependencies = (
+				5A0EF21F2AA5E90F00A23A30 /* SwiftMath */,
+			);
 			productName = LatexUIKIT;
 			productReference = 5A9F96C72AA1C64900F65583 /* LatexUIKIT.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 5A9F96BE2AA1C64900F65583;
+			packageReferences = (
+				5A0EF21E2AA5E90F00A23A30 /* XCRemoteSwiftPackageReference "SwiftMath" */,
+			);
 			productRefGroup = 5A9F96C82AA1C64900F65583 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -427,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A0EF21E2AA5E90F00A23A30 /* XCRemoteSwiftPackageReference "SwiftMath" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mgriebling/SwiftMath.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A0EF21F2AA5E90F00A23A30 /* SwiftMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0EF21E2AA5E90F00A23A30 /* XCRemoteSwiftPackageReference "SwiftMath" */;
+			productName = SwiftMath;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A9F96BF2AA1C64900F65583 /* Project object */;
 }
